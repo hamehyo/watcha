@@ -1,12 +1,18 @@
+import React from 'react';
+import data from './static/stylesheets/data/data.json'
 
-import data from './stylesheets/data/경관의 피.json'
+/* style */
+import className from 'classnames/bind';
+import styles from './App.module.scss';
+const cx = className.bind(styles);
+
 
 function App() {
   console.log(data);
   return (
-    <>
-      sss
-    </>
+    <div className={cx('container')}>
+      aaaa
+    </div>
   );
 }
 
