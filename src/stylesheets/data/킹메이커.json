@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "5.8",
+	release: "10일전",
+	audience: 10000,
+	main_title: "킹메이커",
+	sub_titme: "",
+	year: "2021",
+	genre: ["드라마"],
+	country: ["한국"],
+	rate: "",
+}

@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "2",
+	release: "26일째",
+	audience: 960000,
+	main_title: "킹스맨",
+	sub_titme: "퍼스트 에이전트",
+	year: "2021",
+	genre: ["액션","모험","코미디"],
+	country: ["영국","미국"],
+	rate: "3.2",
+}

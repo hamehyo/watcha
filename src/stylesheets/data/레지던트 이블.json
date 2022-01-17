@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "5.6",
+	release: "3일전",
+	audience: 1750000,
+	main_title: "레지던트 이블",
+	sub_titme: "라쿤시티",
+	year: "2021",
+	genre: ["액션","공포","SF"],
+	country: ["캐나다","독일"],
+	rate: "",
+}

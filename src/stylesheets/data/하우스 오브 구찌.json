@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "5.3",
+	release: "5일째",
+	audience: 50000,
+	main_title: "하우스 오브 구찌",
+	sub_titme: "",
+	year: "2021",
+	genre: ["범죄","드라마","스릴러"],
+	country: ["캐나다", "미국"],
+	rate: "3.3",
+}

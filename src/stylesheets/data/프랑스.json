@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "0.9",
+	release: "4일째",
+	audience: 3249,
+	main_title: "프랑스",
+	sub_titme: "",
+	year: "2021",
+	genre: ["코미디","드라마"],
+	country: ["프랑스","독일","이탈리아"],
+	rate: "3.2",
+}

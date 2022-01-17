@@ -1,0 +1,13 @@
+{
+	dim_img: "",
+	img: "",
+	reserve: "10",
+	release: "5일째",
+	audience: 170000,
+	main_title: "특송",
+	sub_titme: "",
+	year: "2020",
+	genre: ["범죄","액션"],
+	country: ["한국"],
+	rate: "2.7",
+}
