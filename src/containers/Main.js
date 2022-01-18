@@ -52,7 +52,7 @@ const Main = () => {
                                     <div className={cx('img_box')}>
                                         <img src={`IMG0${(idx+1)}`} alt={main_title} /> {/* */}
                                         {/* <img src={require(`../static/img/0${idx}.jpg`)} alt={main_title} /> */}
-                                        {/* <img src={IMG02} alt="포스터" /> */}
+                                        <img src={IMG02} alt="포스터" />{/*  */}
                                     </div>
 
                                     <div className={cx('txt_box')}>
