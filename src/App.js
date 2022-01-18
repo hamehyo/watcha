@@ -20,7 +20,6 @@ function App() {
       {/* 라우팅연습  */}
       {/* <Api_ex /> */}
 
-
       <Switch>
         <Route path={Paths.main} component={MoviePage} />
       </Switch>

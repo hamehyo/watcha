@@ -1,9 +1,24 @@
+*{
+  margin:0;
+  padding:0;
+}
+ul,ol,li{
+  list-style: none;
+}
+a{
+  color:#333;
+  text-decoration: none;
+}
 .main_container {
   position: relative;
   width: 100%;
   .poster_list_wrap {
     .poster_box {
-      width: 25%;
+      display: inline-block;
+      padding:0 8px 20px;
+      width: 20%;
+      vertical-align: top;
+      box-sizing: border-box;
       .img_box {
         overflow: hidden;
         position: relative;
@@ -20,6 +35,9 @@
       }
       .txt_box {
         position: relative;
+        p{
+          margin:0;
+        }
         .tit {
         }
         .info {

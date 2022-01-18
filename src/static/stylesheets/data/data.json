@@ -1,6 +1,6 @@
 [
 	{
-		"img": "./img/01.jpg",
+		"img": "../img/01.jpg",
 		"main_title": "해적",
 		"sub_title": "도깨비 깃발",
 		"year": "2021",
@@ -10,7 +10,7 @@
 		"audience": "3910"
 	},
 	{
-		"img": "./img/02.jpg",
+		"img": "./static/img/02.jpg",
 		"main_title": "스파이더맨",
 		"sub_title": "노 웨이 홈",
 		"year": "2021",
