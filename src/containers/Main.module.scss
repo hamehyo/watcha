@@ -1,17 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-ul,
-ol,
-li {
-  list-style: none;
-}
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 .main_container {
   position: relative;
   margin: 0 auto;
@@ -29,10 +15,10 @@ a {
         width: 100%;
         padding-top: calc(700 / 490 * 100%);
         height: 0;
-        .txt_box {
+        .rank_txt {
           position: absolute;
-          left: 0;
-          top: 0;
+          left: 6px;
+          top: 6px;
           width: 28px;
           height: 28px;
           line-height: 28px;
@@ -40,7 +26,7 @@ a {
           font-weight: 700;
           font-size: 16px;
           color: #fff;
-          background: rgba(0, 0, 0, 0.6);
+          background: rgba(0, 0, 0, 0.8);
           border-radius: 4px;
           z-index: 9;
         }
@@ -175,5 +161,13 @@ a {
   .main_container {
     width: calc(100% - 120px);
     margin: 0 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main_container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: auto;
   }
 }
