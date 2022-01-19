@@ -1,6 +1,6 @@
 [
 	{
-		"img": "../img/01.jpg",
+		"img": "01.jpg",
 		"main_title": "해적",
 		"sub_title": "도깨비 깃발",
 		"year": "2021",
@@ -10,7 +10,7 @@
 		"audience": "3910"
 	},
 	{
-		"img": "./static/img/02.jpg",
+		"img": "02.jpg",
 		"main_title": "스파이더맨",
 		"sub_title": "노 웨이 홈",
 		"year": "2021",
@@ -20,7 +20,7 @@
 		"audience": "6830000"
 	},
 	{
-		"img": "./img/03.jpg",
+		"img": "03.jpg",
 		"main_title": "특송",
 		"sub_title": "",
 		"year": "2020",
@@ -30,7 +30,7 @@
 		"audience": "170000"
 	},
 	{
-		"img": "./img/04.jpg",
+		"img": "04.jpg",
 		"main_title": "씽2게더",
 		"sub_title": "",
 		"year": "2021",
@@ -40,7 +40,7 @@
 		"audience": "440000"
 	},
 	{
-		"img": "./img/05.jpg",
+		"img": "05.jpg",
 		"main_title": "하우스 오브 구찌",
 		"sub_title": "",
 		"year": "2021",
@@ -50,7 +50,7 @@
 		"audience": "50000"
 	},
 	{
-		"img": "./img/06.jpg",
+		"img": "06.jpg",
 		"main_title": "웨스트 사이드 스토리",
 		"sub_title": "",
 		"year": "2021",
@@ -60,7 +60,7 @@
 		"audience": "60000"
 	},
 	{
-		"img": "./img/07.jpg",
+		"img": "07.jpg",
 		"main_title": "경관의 피",
 		"sub_title": "",
 		"year": "2020",
@@ -70,7 +70,7 @@
 		"audience": "520000"
 	},
 	{
-		"img": "./img/08.jpg",
+		"img": "08.jpg",
 		"main_title": "킹메이커",
 		"sub_title": "",
 		"year": "2021",
@@ -80,7 +80,7 @@
 		"audience": "10000"
 	},
 	{
-		"img": "./img/09.jpg",
+		"img": "09.jpg",
 		"main_title": "레지던트 이블",
 		"sub_title": "라쿤시티",
 		"year": "2021",
@@ -90,7 +90,7 @@
 		"audience": "1750000"
 	},
 	{
-		"img": "./img/10.jpg",
+		"img": "10.jpg",
 		"main_title": "비욘드라이브 더 무비",
 		"sub_title": "엔시티 레조넌스",
 		"year": "2021",
@@ -100,7 +100,7 @@
 		"audience": "10000"
 	},
 	{
-		"img": "./img/11.jpg",
+		"img": "11.jpg",
 		"main_title": "킹스맨",
 		"sub_title": "퍼스트 에이전트",
 		"year": "2021",
@@ -110,7 +110,7 @@
 		"audience": "960000"
 	},
 	{
-		"img": "./img/12.jpg",
+		"img": "12.jpg",
 		"main_title": "어나더 라운드",
 		"sub_title": "",
 		"year": "2020",
@@ -120,7 +120,7 @@
 		"audience": "780"
 	},
 	{
-		"img": "./img/13.jpg",
+		"img": "13.jpg",
 		"main_title": "청춘적니",
 		"sub_title": "",
 		"year": "2021",
@@ -130,7 +130,7 @@
 		"audience": "6304"
 	},
 	{
-		"img": "./img/14.jpg",
+		"img": "14.jpg",
 		"main_title": "드라이브 마이 카",
 		"sub_title": "",
 		"year": "2021",
@@ -140,7 +140,7 @@
 		"audience": "40000"
 	},
 	{
-		"img": "./img/15.jpg",
+		"img": "15.jpg",
 		"main_title": "프랑스",
 		"sub_title": "",
 		"year": "2021",
