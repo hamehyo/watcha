@@ -6,11 +6,32 @@ import styles from '../containers/Main.module.scss';
 
 const cx = className.bind(styles);
 
-const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve, rate, audience}) => {
+function audienceNum(audience){
     
+    if( parseInt(audience) < 10000){
+        if( audience.length <= 3){
+            return `${audience}명`;
+        }else{
+            const result=  parseInt(audience/ 1000);
+            const remainder = audience.substr(1);
+            return `${result},${remainder}명`;
+        }
+    }else if(parseInt(audience) >= 10000){
+        if(audience === 10000 ){
+            return `1만명`
+        }else{
+            const result1=  parseInt(audience/ 10000);
+            return `${result1}만명`;
+        }
 
-    const audienceNum = Number(audience).toLocaleString();
+    }
+    return audience;
+    
+}
 
+const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve, rate, audience}) => {
+
+    //const audienceNum = Number(audience).toLocaleString();
     //console.log(Number(audience).toLocaleString());
 
     return(
@@ -23,7 +44,7 @@ const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve
                 <p className={cx('tit')}>{ main_title }{sub_title ? ` : ${sub_title}` : ''}</p>
                 <p className={cx('info')}>{ year }・{ country }</p>
                 <p className={cx('rate')}>평균<em>★</em>{ rate }</p>
-                <p className={cx('num')}>예매율 { reserve }%・ 누적 관객 { audienceNum }</p>
+                <p className={cx('num')}>예매율 { reserve }%・ 누적 관객 { audienceNum(audience) }</p>
             </div>
         </>
     );
