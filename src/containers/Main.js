@@ -1,6 +1,9 @@
 import React from 'react';
 
 import datas from '../static/stylesheets/data/data.json';
+
+import PosterboxInner from '../components/PosterboxInner';
+
 /* styles */
 import className from 'classnames/bind';
 import styles from './Main.module.scss';
@@ -11,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
-import PosterboxInner from '../components/PosterboxInner';
+
 
 SwiperCore.use([Navigation]);
 

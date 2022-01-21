@@ -2,7 +2,7 @@ import React from 'react';
 
 /* styles */
 import className from 'classnames/bind';
-import styles from '../containers/Main.module.scss';
+import styles from '../components/posterboxInner.module.scss';
 
 const cx = className.bind(styles);
 

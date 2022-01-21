@@ -1,8 +1,5 @@
 import React from 'react';
-import {Route, Switch, Link} from 'react-router-dom';
-
-// 라우팅 테스트
-import Api_ex from './testApi/Api_ex';
+import {Route, Switch} from 'react-router-dom';
 
 import MoviePage from './pages/MoviePage';
 
@@ -11,15 +8,15 @@ import { Paths } from './paths';
 /* style */
 import className from 'classnames/bind';
 import styles from './App.module.scss';
+import Header from './containers/assets/Header';
 const cx = className.bind(styles);
 
 function App() {
 
   return (
     <>
-      {/* 라우팅연습  */}
-      {/* <Api_ex /> */}
 
+      <Header />
       <Switch>
         <Route path={Paths.main} component={MoviePage} />
       </Switch>
