@@ -14,13 +14,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
-
+import { Link } from 'react-router-dom';
 
 SwiperCore.use([Navigation]);
 
 const cx = className.bind(styles);
 
 const Main = () => {
+
+    
+    const DetailClick = (idx) => {
+        console.log( idx + 1 );
+    }
+
     return(
         <section className={cx('main_container')}>
             <div className={cx('poster_list_wrap')}>
@@ -59,18 +65,21 @@ const Main = () => {
                             <SwiperSlide 
                                 key={idx} 
                                 className={cx('swiper-slide','poster_box')}
+                                onClick={() => DetailClick(idx)}
                             >
-                                <PosterboxInner 
-                                    idx={idx}
-                                    img={img}
-                                    main_title={main_title}
-                                    sub_title={sub_title}
-                                    year={year}
-                                    country={country}
-                                    reserve={reserve}
-                                    rate={rate}
-                                    audience={audience}
-                                />
+                                <Link>
+                                    <PosterboxInner 
+                                        idx={idx}
+                                        img={img}
+                                        main_title={main_title}
+                                        sub_title={sub_title}
+                                        year={year}
+                                        country={country}
+                                        reserve={reserve}
+                                        rate={rate}
+                                        audience={audience}
+                                    />
+                                </Link>
                             </SwiperSlide>
                         );
                     })
