@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
 import MoviePage from './pages/MoviePage';
+import AuthPage from './pages/AuthPage';
 
 import { Paths } from './paths';
 
@@ -18,6 +19,7 @@ function App() {
     <>
       <Header />
       <Switch>
+        <Route path={Paths.auth.index} component={AuthPage} />
         <Route path={Paths.main} component={MoviePage} />
       </Switch>
     </>
