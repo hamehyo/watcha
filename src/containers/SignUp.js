@@ -3,7 +3,9 @@ import React from 'react';
 const SignUp = () => {
 
     return(
-        <div>
+        <div style={{
+            backgroundColor : 'pink'
+        }}>
             SignUp
         </div>
 

@@ -2,8 +2,10 @@ import React from 'react';
 
 const Book = () => {
     return(
-        <div>
-            BOOK
+        <div style={{
+            backgroundColor : 'skyblue'
+        }}>
+            Book
         </div>
     );
 

@@ -2,7 +2,9 @@ import React from 'react';
 
 const Login = () => {
     return(
-        <div>
+        <div style={{
+            backgroundColor : 'yellow'
+        }}>
             LOGIN
         </div>
     );

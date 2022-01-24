@@ -1,31 +1,52 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route,Switch } from 'react-router-dom';
+import { Paths } from '../../paths/index';
+
+import Program from '../Program';
+import Book from '../Book';
+import Login from '../Login';
+import SignUp from '../SignUp';
 
 /* styles */
 import className from 'classnames/bind';
 import styles from './Header.module.scss';
 
+
 const cx = className.bind(styles);
 
 
 const Header = () => {
-
+    
     return(
-        <header>
-            <h1>WATCHA PEDIA</h1>
-            <ul className={cx('')}>
-                <li><Link to="/">영화</Link></li>
-                <li><Link to="">TV프로그램</Link></li>
-                <li><Link to="">책</Link></li>
-            </ul>
-            <div>
-                <div>
-                    <input type="text"onChange={onChange} value={text} placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+        <>
+            <header>
+                <div className={cx('haeder_inner')}>
+                    <h1 className={cx('logo')}><strong>WATCHA</strong> PEDIA</h1>
+                    <nav>
+                        <ul className={cx('nav_list')}>
+                            <li><Link to={Paths.main}>영화</Link></li>
+                            <li><Link to={Paths.program}>TV프로그램</Link></li>
+                            <li><Link to={Paths.book}>책</Link></li>
+                        </ul>
+                    </nav>
+                    <div className={cx('user_box')}>
+                        <div className={cx('input_box')}>
+                            <img src={`${process.env.PUBLIC_URL}/img/icon_search.svg`} className={cx('icon')} alt="돋보기아이콘" />
+                            <input type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+                        </div>
+                        <div className={cx('btn','login')}><Link to={Paths.login}>로그인</Link></div>
+                        <div className={cx('btn','signup')}><Link to={Paths.signup}>회원가입</Link></div>
+                    </div>
                 </div>
-                <div><Link to="">로그인</Link></div>
-                <div><Link to="">회원가입</Link></div>
-            </div>
-        </header>    
+            </header>
+            <Switch>
+                <Route path='/' exact/>
+                <Route path={Paths.program} component={Program}/>
+                <Route path={Paths.book} component={Book}/>
+                <Route path={Paths.login} component={Login}/>
+                <Route path={Paths.signup} component={SignUp}/>
+            </Switch>
+        </>
     );
 }
 
