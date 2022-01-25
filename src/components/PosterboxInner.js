@@ -26,6 +26,7 @@ const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve
 
     //const audienceNum = Number(audience).toLocaleString();
     //console.log(Number(audience).toLocaleString());
+    console.log('???????????')
 
     return(
         <>

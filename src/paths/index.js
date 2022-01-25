@@ -1,6 +1,6 @@
 export const Paths = {
     main: "/",
-    detail: "/datail",
+    detail: "/detail",
     program: "/program",
     book: "/book",
     auth:{

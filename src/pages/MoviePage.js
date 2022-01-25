@@ -8,17 +8,16 @@ import Book from '../containers/Book';
 
 import { Paths } from '../paths';
 
-const MoviePage = ({ match }) => {
-    const { idx } = match.params;
-    console.log(idx);
+const MoviePage = () => {
     return(
         <>
             <Switch>
-                <Route path={Paths.main} component={Main} exact />
                 <Route path={Paths.program} component={Program} />
-                <Route path={Paths.detail + '/:idx'} component={Detail}/>
+                <Route path={Paths.detail + '/:idx?'} component={Detail}/>
                 <Route path={Paths.book} component={Book}/>
+                <Route path={Paths.main} component={Main} exact />
             </Switch>
+            
         </>
     );
 };
