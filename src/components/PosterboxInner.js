@@ -6,6 +6,7 @@ import styles from '../components/posterboxInner.module.scss';
 
 const cx = className.bind(styles);
 
+// 누적관객 수
 function audienceNum(audience){
     if( parseInt(audience) < 10000){
         if( audience.length <= 3){
@@ -23,11 +24,6 @@ function audienceNum(audience){
 }
 
 const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve, rate, audience}) => {
-
-    //const audienceNum = Number(audience).toLocaleString();
-    //console.log(Number(audience).toLocaleString());
-    console.log('???????????')
-
     return(
         <>
             <div className={cx('img_box')}>

@@ -15,7 +15,9 @@ const Header = () => {
     return(
         <header>
             <div className={cx('haeder_inner')}>
-                <h1 className={cx('logo')}><strong>WATCHA</strong> PEDIA</h1>
+                <h1 className={cx('logo')}>
+                    <Link to="/"><strong>WATCHA</strong> PEDIA</Link> 
+                </h1>
                 <nav>
                     <ul className={cx('nav_list')}>
                         <li><Link to={Paths.main}>영화</Link></li>

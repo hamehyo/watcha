@@ -1,12 +1,6 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import datas from '../static/stylesheets/data/data.json';
 
-
-
-const Detail = ({match}) => {
-    const { idx } = match.params;
-    console.log(match);
+const Detail = () => {
     return(
         <>
             <div>Detail</div>
