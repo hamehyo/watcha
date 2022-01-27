@@ -28,11 +28,8 @@ function audienceNum(audience){
 const Detail = ({match}) => {
     const {idx} = match.params;
     //console.log(idx);
-
     const movieList = datas.filter((data, index) => (index+1) === Number(idx));
-    console.log(movieList)
-    
-
+    //console.log(movieList)
     return(
         <>
             <section className={cx('detail_container')}>
@@ -48,9 +45,9 @@ const Detail = ({match}) => {
                                     </div>
                                     <div className={cx('poster_info_box')}>
                                         <div className={cx('num')}>
-                                            예매율 { reserve }% 
-                                            개봉 
-                                            누적관객 { audienceNum(audience) }
+                                            <span>예매율 <strong>{ reserve }%</strong></span>
+                                            <span>개봉</span> 
+                                            <span>누적관객 <strong>{ audienceNum(audience) }</strong></span>
                                         </div>
                                         <div className={cx('tit')}>{main_title}{sub_title && ` : ${sub_title}`}</div>
                                         <div className={cx('info')}>{ year }・{ country }</div>
