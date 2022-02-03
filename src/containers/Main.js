@@ -24,64 +24,66 @@ const cx = className.bind(styles);
 const Main = () => {
     return(
         <section className={cx('main_container')}>
-            <div className={cx('poster_list_wrap')}>
-                <h2>박스오피스 순위</h2>
-                <Swiper
-                    className={cx('poster_slide')}
-                    spaceBetween={16}
-                    slidesPerGroup={5}
-                    slidesPerView={5}
-                    navigation={{
-                        nextEl: ".button-next",
-                        prevEl: ".button-prev",
-                    }}
-                    breakpoints={{
-                        1: {
-                            slidesPerView:2,
-                        },
-                        325: {
-                            slidesPerView:3,
-                        },
-                        720: {
-                            slidesPerView:3,
-                        },
-                        900: {
-                            slidesPerView: 4,
-                        },
-                        1100: {
-                            slidesPerView: 5,
-                        }
-                    }}
-                > 
-                {
-                    datas.map( (data, idx) => {
-                        const { img, main_title, sub_title, year, country, reserve, rate, audience } = data;
-                        return(
-                            <SwiperSlide 
-                                key={idx} 
-                                className={cx('swiper-slide','poster_box')}
-                            >
-                                <Link to={`${Paths.detail}/${idx+1}`}>
-                                    <PosterboxInner 
-                                        idx={idx}
-                                        img={img}
-                                        main_title={main_title}
-                                        sub_title={sub_title}
-                                        year={year}
-                                        country={country}
-                                        reserve={reserve}
-                                        rate={rate}
-                                        audience={audience}
-                                    />
-                                </Link>
-                            </SwiperSlide>
-                        );
-                    })
-                }                        
-                </Swiper>
-                <div className="button-prev"></div>
-                <div className="button-next"></div>
-            </div>{/* poster_list_wrap */}
+            <div className={cx('main_container_inner')}>
+                <div className={cx('poster_list_wrap')}>
+                    <h2>박스오피스 순위</h2>
+                    <Swiper
+                        className={cx('poster_slide')}
+                        spaceBetween={16}
+                        slidesPerGroup={5}
+                        slidesPerView={5}
+                        navigation={{
+                            nextEl: ".button-next",
+                            prevEl: ".button-prev",
+                        }}
+                        breakpoints={{
+                            1: {
+                                slidesPerView:2,
+                            },
+                            325: {
+                                slidesPerView:3,
+                            },
+                            720: {
+                                slidesPerView:3,
+                            },
+                            900: {
+                                slidesPerView: 4,
+                            },
+                            1100: {
+                                slidesPerView: 5,
+                            }
+                        }}
+                    > 
+                    {
+                        datas.map( (data, idx) => {
+                            const { img, main_title, sub_title, year, country, reserve, rate, audience } = data;
+                            return(
+                                <SwiperSlide 
+                                    key={idx} 
+                                    className={cx('swiper-slide','poster_box')}
+                                >
+                                    <Link to={`${Paths.detail}/${idx+1}`}>
+                                        <PosterboxInner 
+                                            idx={idx}
+                                            img={img}
+                                            main_title={main_title}
+                                            sub_title={sub_title}
+                                            year={year}
+                                            country={country}
+                                            reserve={reserve}
+                                            rate={rate}
+                                            audience={audience}
+                                        />
+                                    </Link>
+                                </SwiperSlide>
+                            );
+                        })
+                    }                        
+                    </Swiper>
+                    <div className="button-prev"></div>
+                    <div className="button-next"></div>
+                </div>{/* poster_list_wrap */}
+            </div>{/* main_container_inner */}
         </section>
     );
 

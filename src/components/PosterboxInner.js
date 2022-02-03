@@ -5,7 +5,7 @@ import className from 'classnames/bind';
 import styles from '../components/posterboxInner.module.scss';
 import { audienceNum } from '../hooks/useAuienceNum';
 
-const cx = className.bind(styles);
+const cx = className.bind(styles); 
 
 const PosterboxInner = ({idx, img, main_title, sub_title, year, country, reserve, rate, audience}) => {
     return(

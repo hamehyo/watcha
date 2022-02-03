@@ -1,6 +1,6 @@
 import React from 'react';
 import datas from '../static/stylesheets/data/data.json';
-
+import ReactStars from 'react-rating-stars-component';
 
 /* styles */
 import className from 'classnames/bind';
@@ -11,8 +11,10 @@ const cx = className.bind(styles);
 
 const Detail = ({match}) => {
     const {idx} = match.params;
-    //console.log(idx);
-
+    console.log(idx);
+    const ratingChanged = (newRating) => {
+        console.log(newRating);
+      };
     const { img, main_title, sub_title, year, country, reserve, rate, audience } = datas.filter((data, index) => (index+1) === Number(idx))[0];
     //console.log(movieList)
     return(
@@ -31,7 +33,16 @@ const Detail = ({match}) => {
                     </div>
                         <div className={cx('tit')}>{main_title}{sub_title && ` : ${sub_title}`}</div>
                         <div className={cx('info')}>{ year }・{ country }</div>
-                        <div className={cx('user_area')}></div>
+                        <div className={cx('user_area')}>
+                            <p>평가하기</p>
+                            <ReactStars
+                                count={5}
+                                isHalf={true}
+                                onChange={ratingChanged}
+                                size={24}
+                                activeColor="#ffd700"
+                            />
+                        </div>
                     </div>
                 </div>
                 {
